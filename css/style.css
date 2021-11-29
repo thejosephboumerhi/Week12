@@ -1,0 +1,126 @@
+/*The look of everything*/
+/*This is how I can comment in CSS*/
+
+/*The body has the parallax*/
+body {
+  background-image: linear-gradient(180deg, grey, black, grey, black);
+  background-attachment: fixed;
+  min-height: 500px;
+}
+
+table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  background-color: #cccccc;
+  border-style: solid;
+}
+
+h1 {
+  text-align: center;
+  background-color: yellow;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+@font-face {
+  font-family: "Red Hat Mono", monospace;
+  src: url(Week12\fonts\Red_Hat_Mono\RedHatMono-VariableFont_wght.ttf);
+}
+
+p {
+  background-color: #ababab;
+  font-family: "Red Hat Mono", monospace;
+  font-size: 17px;
+}
+
+td {
+  border-radius: 10px;
+  border-style: solid;
+}
+
+.weekBar {
+  background-color: orange;
+  font-size: 25px;
+  text-align: left;
+  border-style: solid;
+  border-top-left-radius: 13px;
+  border-bottom-right-radius: 15px;
+}
+.author {
+  background-color: #ababab;
+  text-align: center;
+  border-style: solid;
+}
+
+/* Buttons for the links*/
+.linkButton {
+  padding: 15px 15px;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: black;
+  background-color: orange;
+  border-style: groove;
+  border-radius: 15px;
+  box-shadow: 0 5px white;
+}
+.linkButton:hover {
+  background-color: brown;
+}
+.linkButton:active {
+  background-color: orange;
+  box-shadow: 0 3px red;
+  transform: translateY(4px);
+}
+
+/*Animation for the square*/
+div.anim {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+
+  /* initiate animation */
+  animation-name: theSquare;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+/* animation instructions  from to or % */
+@keyframes theSquare {
+  0% {
+    left: 0px;
+    background-color: yellow;
+  }
+  50% {
+    left: 850px;
+    background-color: orange;
+  }
+  100% {
+    left: 0px;
+    background-color: yellow;
+  }
+}
+
+/*For the dice*/
+.diceCentrel {
+  max-width: 125px;
+  background: white;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+}
+.diceButton {
+  background-color: #ff0000; /* Green */
+  border: none;
+  padding: 30px;
+  border-radius: 15px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: verdana;
+}
